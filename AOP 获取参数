@@ -122,10 +122,5 @@ public static StringBuffer getNameAndArgs(Class<?> cls, String clazzName, String
 }
 Controller:
 @RequestMapping("/testLogAop") @ResponseBody public Object testLogAop(Integer id, String name) {
-return testUserService.query();//这里随便
-} @RequestMapping("/testLogAop2") @ResponseBody // 用实体类接收参数 public Object testLogAop2(TestUser user) { System.out.println("user.getName():" + user.getName()); return testUserService.query();//这里随便 }
-联系QQ:1767689078
-链接: https://unordered.org/timelines/58b090974e400000
-原文链接: http://blog.csdn.net/weixin_41633157/article/details/79930992
-转载文章，著作权归作者所有。如有不妥之处，请联系 spider@unordered.xyz
-评论
+return testUserService.query（）; //这里随便ss
+} @RequestMapping（“/ testLogAop2”）@ResponseBody //用实体类接收参数public Object testLogAop2（TestUser user）{System.out.println（“user.getName（）：”+ user.getName（））; return testUserService.query（）; //}
